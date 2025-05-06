@@ -55,7 +55,7 @@ export default function HomePage() {
         ))}
       </nav>
 
-      <section className="relative h-[90vh] flex flex-col items-center justify-center text-center overflow-hidden">
+      <section className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden">
   {/* Fond animé */}
   <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-pulse-slow opacity-40 z-0" />
 
@@ -67,6 +67,15 @@ export default function HomePage() {
     <p className="text-xl text-gray-700 font-medium h-8">
       <span className="typewriter-role"></span>
     </p>
+  </div>
+
+  {/* Flèche vers Présentation */}
+  <div className="absolute bottom-10 animate-bounce z-10">
+    <a href="#présentation">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
   </div>
 
   <style jsx>{`
@@ -143,86 +152,92 @@ export default function HomePage() {
 </section>
 
 
-      <section
+<section
   ref={presRef}
   id="présentation"
   className="bg-blue-50 px-6 py-16 transition-all duration-700 opacity-0 translate-y-8"
 >
   <h2 className="text-3xl font-bold text-blue-800 text-center mb-8">Présentation</h2>
-  <div className="max-w-3xl mx-auto text-lg text-gray-800 space-y-6">
-    <p>
-      Actuellement étudiant en BUT Réseaux & Télécommunications à l&apos;IUT de la Sorbonne Paris Nord,
-      j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
-      Mon parcours m&apos;a permis de participer à des projets concrets tels que la mise en place de Wi-Fi sécurisé, d&apos;infrastructures de supervision ou encore des audits réseau.
-    </p>
-    <p>
-      Admis en cycle ingénieur à l&apos;EFREI Paris pour la rentrée 2025, je suis à la recherche d&apos;une alternance à partir de septembre 2025
-      afin de mettre en pratique mes compétences dans un environnement professionnel stimulant.
-      Autonome, rigoureux et passionné par les systèmes et la cybersécurité, je suis prêt à relever les défis du monde de l&apos;ingénierie réseau.
-    </p>
+
+  <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 border border-blue-100">
+    <div className="text-lg text-gray-800 space-y-6">
+      <p>
+        Actuellement étudiant en BUT Réseaux & Télécommunications à l&apos;IUT de la Sorbonne Paris Nord,
+        j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
+        Mon parcours m&apos;a permis de participer à des projets concrets tels que la mise en place de Wi-Fi sécurisé, d&apos;infrastructures de supervision ou encore des audits réseau.
+      </p>
+      <p>
+        Admis en cycle ingénieur à l&apos;EFREI Paris pour la rentrée 2025, je suis à la recherche d&apos;une alternance à partir de septembre 2025
+        afin de mettre en pratique mes compétences dans un environnement professionnel stimulant.
+        Autonome, rigoureux et passionné par les systèmes et la cybersécurité, je suis prêt à relever les défis du monde de l&apos;ingénierie réseau.
+      </p>
+    </div>
   </div>
 </section>
 
-      <section
-        ref={compRef}
-        id="compétences"
-        className="bg-white px-6 py-12 transition-all duration-700 text-center opacity-0 translate-y-8"
-      >
-        <h2 className="text-3xl font-bold text-blue-800 mb-6">Compétences</h2>
+<section
+  ref={compRef}
+  id="compétences"
+  className="bg-white px-6 py-12 transition-all duration-700 text-center opacity-0 translate-y-8"
+>
+  <h2 className="text-3xl font-bold text-blue-800 mb-10">Compétences</h2>
 
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Administration des réseaux & de l&apos;Internet</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>DHCP, DNS, SMTP, SNMP, HTTP, HTTPS</li>
-            <li>OSPF, RIP, MPLS, TCP/IP, STP, HSRP</li>
-            <li>Routage statique et dynamique</li>
-            <li>LAN, WAN, VLAN, VPN</li>
-          </ul>
-        </div>
+  <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Administration des réseaux & de l&apos;Internet</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>DHCP, DNS, SMTP, SNMP, HTTP, HTTPS</li>
+        <li>OSPF, RIP, MPLS, TCP/IP, STP, HSRP</li>
+        <li>Routage statique et dynamique</li>
+        <li>LAN, WAN, VLAN, VPN</li>
+      </ul>
+    </div>
 
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Systèmes, virtualisation & annuaires</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>UNIX, Linux, Windows</li>
-            <li>Active Directory</li>
-            <li>VirtualBox, VMware</li>
-          </ul>
-        </div>
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Systèmes, virtualisation & annuaires</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>UNIX, Linux, Windows</li>
+        <li>Active Directory</li>
+        <li>VirtualBox, VMware</li>
+      </ul>
+    </div>
 
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Supervision & sécurité réseau</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>SSL/TLS, ACL, IDS/IPS, Firewall</li>
-            <li>Architectures sécurisées</li>
-            <li>Nagios, Syslog, ELK, GoAccess</li>
-          </ul>
-        </div>
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Supervision & sécurité réseau</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>SSL/TLS, ACL, IDS/IPS, Firewall</li>
+        <li>Architectures sécurisées</li>
+        <li>Nagios, Syslog, ELK, GoAccess</li>
+      </ul>
+    </div>
 
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Pentesting & analyse de vulnérabilités</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>Nmap, Nessus, Burpsuite, Wpscan, Metasploit, Hydra, Sqlmap, JTR</li>
-          </ul>
-        </div>
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Pentesting & analyse de vulnérabilités</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>Nmap, Nessus, Burpsuite, Wpscan, Metasploit, Hydra, Sqlmap, JTR</li>
+      </ul>
+    </div>
 
-        <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Développement & automatisation</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>Scripts : Bash, Shell</li>
-            <li>Langages : Python, PHP, JavaScript, SQL</li>
-            <li>Technologies Web : HTML, CSS</li>
-          </ul>
-        </div>
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Développement & automatisation</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>Scripts : Bash, Shell</li>
+        <li>Langages : Python, PHP, JavaScript, SQL</li>
+        <li>Technologies Web : HTML, CSS</li>
+      </ul>
+    </div>
 
-        <div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Langues & qualités</h3>
-          <ul className="pl-6 text-gray-700 space-y-1">
-            <li>Français (courant)</li>
-            <li>Anglais (technique)</li>
-            <li>Rigueur, Esprit analytique, Autonomie, Travail en équipe</li>
-          </ul>
-        </div>
-      </section>
+    <div className="bg-blue-50 shadow-md rounded-2xl p-6 text-left">
+      <h3 className="text-xl font-semibold text-blue-700 mb-2">Langues & qualités</h3>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>Français (courant)</li>
+        <li>Anglais (technique)</li>
+        <li>Rigueur, Esprit analytique, Autonomie, Travail en équipe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
       <section
   ref={formRef}
@@ -315,56 +330,67 @@ export default function HomePage() {
   id="projets"
   className="bg-white px-6 py-12 transition-all duration-700 opacity-0 translate-y-8"
 >
-  <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Projets universitaires</h2>
+  <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">Projets universitaires</h2>
 
-  <div className="space-y-6 text-gray-800 leading-relaxed">
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE24 - Attaque Man-in-the-Middle (MITM)</h3>
-      <p>
-        Ce projet consistait à mettre en œuvre une attaque de type Man-in-the-Middle à l&apos;aide de l&apos;empoisonnement ARP. Une machine attaquante interceptait les communications entre un client et un serveur HTTP, capturant les données saisies dans des formulaires. Des scripts Python permettaient d’enregistrer les requêtes HTTP en JSON ou dans une base SQLite. Un module de détection ARP était aussi implémenté côté serveur pour identifier les incohérences dans les tables ARP. D’autres variantes d’interception, comme DNS spoofing ou écoute DHCP, ont également été testées.
+  <div className="relative border-l-4 border-blue-300 ml-4 pl-6 space-y-12">
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2025 – SAE503 : Assurer la sécurité & supervision avancée d'un système d'information</h3>
+      <p className="text-gray-700 mt-2">
+        Pare-feu iptables, NAT, filtrage ICMP sous Marionnet. Simulation réseau complet dans MI-LXC avec attaques ARP, DNS, MITM.
       </p>
     </div>
 
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE21 - Construire un réseau informatique</h3>
-      <p>
-        Plusieurs LAN ont été créés sous GNS3, chacun étant connecté à un ou plusieurs routeur. Les communications inter-réseaux ont d&apos;abord été assurées en routage statique. Ensuite, les protocoles dynamiques OSPF puis RIP ont été mis en place pour gérer automatiquement les routes. Les tests de connectivité entre les différentes machines ont permis de valider l&apos;efficacité des protocoles sur la topologie simulée.
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2025 – SAE501 : Concevoir, réaliser et présenter une solution technique</h3>
+      <p className="text-gray-700 mt-2">
+        Mise en place dun Wi-Fi avec portail captif, authentification FreeRADIUS et base MySQL sous pfSense. Réseau virtualisé sous VirtualBox.
       </p>
     </div>
 
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE302 - Développer des applications communicantes</h3>
-      <p>
-        Le projet consistait à développer un système de quiz interactif en PHP/MySQL, avec interface web, gestion de scores et classement en temps réel. L&apos;application était hébergée sur XAMPP et accessible à distance via Ngrok. Les réponses des joueurs étaient enregistrées dans la base de données, et un tableau de scores actualisé permettait de suivre l&apos;évolution de la partie.
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2024 – SAE502 : Piloter un projet informatique</h3>
+      <p className="text-gray-700 mt-2">
+        Surveillance d’un service HTTP par SNMP, alerte automatique en cas de panne, remontée via MIBs personnalisées.
       </p>
     </div>
 
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE304 - Découvrir le Pentesting</h3>
-      <p>
-        À l&apos;aide de Nessus, plusieurs CVE critiques ont été identifiées sur deux machines cibles (Metasploitable et Windows XP). Des exploits ont ensuite été testés dans Metasploit, notamment sur des services comme NFS, VNC, rlogin et SMB. Le projet incluait l&apos;analyse des résultats, la documentation des failles exploitées et la génération de rapports techniques avec recommandations de corrections.
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2024 – SAE304 : Découvrir le Pentesting</h3>
+      <p className="text-gray-700 mt-2">
+        Identification de CVE critiques avec Nessus, exploitation via Metasploit, documentation et recommandations correctives.
       </p>
     </div>
 
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE502 - Piloter un projet informatique</h3>
-      <p>
-        Ce projet mettait en place une architecture avec deux clients, un serveur SNMP et une station de supervision. Un agent SNMP surveillait un service HTTP sur une machine. Lors de l&apos;arrêt du service, un message était automatiquement envoyé à la machine de supervision. Cette communication était assurée via des MIBs personnalisées, permettant une remontée d&apos;alerte centralisée.
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2024 – SAE302 : Développer des applications communicantes</h3>
+      <p className="text-gray-700 mt-2">
+        Développement d'un quiz PHP/MySQL avec scores en temps réel et hébergement distant via XAMPP/Ngrok.
       </p>
     </div>
 
-    <div>
-      <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE501 – Concevoir, réaliser et présenter une solution technique</h3>
-      <p>
-        Conception d&apos;une infrastructure Wi-Fi sécurisée avec un point d&apos;accès TP-Link connecté à pfSense. Une interface OPT1 a été ajoutée, et les utilisateurs accédaient au Wi-Fi via un portail captif configuré pour interagir avec un serveur FreeRADIUS. L&apos;authentification s&apos;effectuait grâce à une base MySQL. L&apos;ensemble de l&apos;architecture a été virtualisé (pfSense, FreeRADIUS, MySQL) sur VirtualBox, avec segmentation en VLANs, configuration du pare-feu, interface d&apos;administration, et intégration d&apos;une imprimante réseau.
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2023 – SAE21 : Construire un réseau informatique</h3>
+      <p className="text-gray-700 mt-2">
+        Création de plusieurs LAN sous GNS3, routage statique, puis OSPF et RIP. Tests de connectivité pour valider la topologie réseau.
       </p>
     </div>
-    <div>
-            <h3 className="text-xl font-semibold text-blue-700 mb-2">SAE503 -Assurer la Sécurité et supervision avancée d&apos;un système d&apos;information</h3>
-            <p>Le projet SAE503 portait sur la mise en place de mécanismes de sécurité réseau avancés à travers plusieurs exercices répartis en deux parties. Dans la première, réalisée sous Marionnet, un pare-feu Linux avec iptables a été configuré pour gérer le trafic entre un réseau privé et un réseau public, intégrant des règles de NAT, de filtrage ICMP, et la création de chaînes personnalisées. Dans la deuxième partie, l&apos;environnement MI-LXC a permis de simuler un système d&apos;information complet avec DMZ, intranet, LDAP, etc. Des attaques telles que ARP Spoofing, MITM, et usurpation DNS ont été reproduites via arpspoof, urlsnarf, et tcpdump pour observer et intercepter les paquets.</p>
-          </div>
+
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2023 – SAE24 : MITM (Man-in-the-Middle)</h3>
+      <p className="text-gray-700 mt-2">
+        Mise en œuvre d'une attaque MITM via empoisonnement ARP, interception HTTP, enregistrement JSON/SQLite, détection ARP et tests de spoofing DNS/DHCP.
+      </p>
+    </div>
   </div>
 </section>
+
 
 
 <section
