@@ -46,16 +46,24 @@ export default function HomePage() {
   
 
   return (
-    <main className="font-sans text-gray-900 bg-gradient-to-b from-white via-blue-50 to-white min-h-screen scroll-smooth">
-      <nav className="fixed top-0 w-full bg-white shadow z-50 p-4 flex justify-center gap-8 text-blue-800 font-semibold">
-        {['Présentation', 'Compétences', 'Formations', 'Projets', 'Contact'].map((section) => (
-          <a key={section} href={`#${section.toLowerCase()}`} className="hover:text-blue-600">
-            {section}
-          </a>
-        ))}
-      </nav>
+  <main className="font-sans text-gray-900 bg-gradient-to-b from-white via-blue-50 to-white min-h-screen scroll-smooth">
+    <nav className="fixed top-0 w-full bg-white shadow z-50 p-4 flex justify-center gap-8 text-blue-800 font-semibold">
+      {['Accueil', 'Présentation', 'Compétences', 'Formations', 'Projets', 'Contact'].map((section) => (
+        <a
+          key={section}
+          href={`#${section.toLowerCase()}`}
+          className="hover:text-blue-600 transition duration-200 px-3 py-1 rounded-md hover:bg-blue-100"
+        >
+          {section}
+        </a>
+      ))}
+    </nav>
 
-      <section className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden">
+
+      <section 
+      id="accueil"
+      className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden">
+      
   {/* Fond animé */}
   <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-pulse-slow opacity-40 z-0" />
 
@@ -265,7 +273,7 @@ export default function HomePage() {
     
     <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
       <p className="font-semibold text-lg">
-        Cycle Ingénieur Réseaux & Sécurité<br />EFREI Paris (2025–2028)
+        Cycle Ingénieur Réseaux & Sécurité<br />EFREI Paris (2025 &ndash; 2028)
       </p>
     </div>
   </div>
@@ -291,7 +299,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
           <p className="font-semibold text-lg">
-            BUT Réseaux & Télécoms<br />IUT Sorbonne Paris Nord (2024–2025)
+            BUT Réseaux & Télécoms<br />IUT Sorbonne Paris Nord (2024 &ndash; 2025)
           </p>
         </div>
       </div>
@@ -316,7 +324,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
           <p className="font-semibold text-lg">
-            DUT Réseaux & Télécoms<br />IUT Sorbonne Paris Nord (2022–2024)
+            DUT Réseaux & Télécoms<br />IUT Sorbonne Paris Nord (2022 &ndash; 2024)
           </p>
         </div>
       </div>
@@ -335,7 +343,7 @@ export default function HomePage() {
   <div className="relative border-l-4 border-blue-300 ml-4 pl-6 space-y-12">
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2025 – SAE503 : Assurer la sécurité & supervision avancée d'un système d'information</h3>
+      <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE503 : Assurer la sécurité & supervision avancée d&apos;un système d&apos;information</h3>
       <p className="text-gray-700 mt-2">
         Pare-feu iptables, NAT, filtrage ICMP sous Marionnet. Simulation réseau complet dans MI-LXC avec attaques ARP, DNS, MITM.
       </p>
@@ -343,7 +351,7 @@ export default function HomePage() {
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2025 – SAE501 : Concevoir, réaliser et présenter une solution technique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE501 : Concevoir, réaliser et présenter une solution technique</h3>
       <p className="text-gray-700 mt-2">
         Mise en place dun Wi-Fi avec portail captif, authentification FreeRADIUS et base MySQL sous pfSense. Réseau virtualisé sous VirtualBox.
       </p>
@@ -351,15 +359,15 @@ export default function HomePage() {
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 – SAE502 : Piloter un projet informatique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE502 : Piloter un projet informatique</h3>
       <p className="text-gray-700 mt-2">
-        Surveillance d’un service HTTP par SNMP, alerte automatique en cas de panne, remontée via MIBs personnalisées.
+        Surveillance d&apos;un service HTTP par SNMP, alerte automatique en cas de panne, remontée via MIBs personnalisées.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 – SAE304 : Découvrir le Pentesting</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE304 : Découvrir le Pentesting</h3>
       <p className="text-gray-700 mt-2">
         Identification de CVE critiques avec Nessus, exploitation via Metasploit, documentation et recommandations correctives.
       </p>
@@ -367,15 +375,15 @@ export default function HomePage() {
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 – SAE302 : Développer des applications communicantes</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE302 : Développer des applications communicantes</h3>
       <p className="text-gray-700 mt-2">
-        Développement d'un quiz PHP/MySQL avec scores en temps réel et hébergement distant via XAMPP/Ngrok.
+        Développement d&apos;un quiz PHP/MySQL avec scores en temps réel et hébergement distant via XAMPP/Ngrok.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2023 – SAE21 : Construire un réseau informatique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2023 &ndash; SAE21 : Construire un réseau informatique</h3>
       <p className="text-gray-700 mt-2">
         Création de plusieurs LAN sous GNS3, routage statique, puis OSPF et RIP. Tests de connectivité pour valider la topologie réseau.
       </p>
@@ -383,9 +391,9 @@ export default function HomePage() {
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2023 – SAE24 : MITM (Man-in-the-Middle)</h3>
+      <h3 className="text-xl font-bold text-blue-700">2023 &ndash; SAE24 : MITM (Man-in-the-Middle)</h3>
       <p className="text-gray-700 mt-2">
-        Mise en œuvre d'une attaque MITM via empoisonnement ARP, interception HTTP, enregistrement JSON/SQLite, détection ARP et tests de spoofing DNS/DHCP.
+        Mise en œuvre d&apos;une attaque MITM via empoisonnement ARP, interception HTTP, enregistrement JSON/SQLite, détection ARP et tests de spoofing DNS/DHCP.
       </p>
     </div>
   </div>
