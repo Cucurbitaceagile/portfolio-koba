@@ -353,7 +353,7 @@ export default function HomePage() {
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
       <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE501 : Concevoir, réaliser et présenter une solution technique</h3>
       <p className="text-gray-700 mt-2">
-        Mise en place dun Wi-Fi avec portail captif, authentification FreeRADIUS et base MySQL sous pfSense. Réseau virtualisé sous VirtualBox.
+        Mise en place d&apos;un Wi-Fi avec portail captif, authentification FreeRADIUS et base MySQL sous pfSense. Réseau virtualisé sous VirtualBox.
       </p>
     </div>
 
