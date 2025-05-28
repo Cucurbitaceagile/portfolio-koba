@@ -262,9 +262,9 @@ export default function HomePage() {
 
   <div className="max-w-5xl mx-auto space-y-6">
     <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-blue-600">
-      <h3 className="text-xl font-semibold text-blue-700">01/2025 &ndash; 04/2025 · Stagiaire en Développement et Cybersécurité</h3>
+      <h3 className="text-xl font-semibold text-blue-700">01/2025 &ndash; 04/2025 · Développeur web frontend et pentesting de Neuroboost&ndash;ai</h3>
       <p className="text-gray-800 mt-2">
-        <strong>Beytm, Neuilly-sur-Seine</strong>
+        <strong>Beytm, Neuilly-sur-Seine, Stage</strong>
       </p>
       <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
         <li>Déploiement d&apos;une infrastructure de logs avec <strong>Grafana, Loki et Promtail</strong></li>
@@ -278,9 +278,9 @@ export default function HomePage() {
     </div>
 
     <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-blue-600">
-      <h3 className="text-xl font-semibold text-blue-700">04/2024 &ndash; 06/2024 · Stagiaire en Pentesting, Cybersécurité et Réseaux</h3>
+      <h3 className="text-xl font-semibold text-blue-700">04/2024 &ndash; 06/2024 · Pentester Cybersécurité et Réseaux</h3>
       <p className="text-gray-800 mt-2">
-        <strong>Beytm, Neuilly-sur-Seine</strong>
+        <strong>Beytm, Neuilly-sur-Seine, Stage</strong>
       </p>
       <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
         <li>Test d&apos;intrusion du site web de l&apos;entreprise</li>
