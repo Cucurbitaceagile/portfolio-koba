@@ -277,8 +277,8 @@ export default function HomePage() {
         <strong>Beytm, Neuilly-sur-Seine</strong>
       </p>
       <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-        <li>Test d'intrusion du site web de l'entreprise</li>
-        <li>Reassemblage du code source d'un logiciel de reconnaissance de mouvement</li>
+        <li>Test d&apos;intrusion du site web de l&apos;entreprise</li>
+        <li>Reassemblage du code source d&apos;un logiciel de reconnaissance de mouvement</li>
         <li>Rédaction de rapport cybersécurité</li>
         <li>Rédaction de rapport réseau</li>
       </ul>
