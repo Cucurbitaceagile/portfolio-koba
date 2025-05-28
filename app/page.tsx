@@ -61,11 +61,17 @@ export default function HomePage() {
     </nav>
 
 
-      <section 
-      id="accueil"
-      className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden">
-      
-  {/* Fond animé */}
+    <section 
+  id="accueil"
+  className="relative h-[100vh] flex flex-col items-center justify-center text-center overflow-hidden"
+  style={{
+    backgroundImage: 'url("/fond.png")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
+  {/* Voile animé par-dessus l'image */}
   <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-pulse-slow opacity-40 z-0" />
 
   {/* Texte animé */}
@@ -87,6 +93,7 @@ export default function HomePage() {
     </a>
   </div>
 
+  {/* Animation typewriter */}
   <style jsx>{`
     .typewriter-name {
       display: inline-block;
@@ -159,7 +166,6 @@ export default function HomePage() {
     `
   }} />
 </section>
-
 
 <section
   ref={presRef}
