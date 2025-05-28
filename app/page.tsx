@@ -322,7 +322,7 @@ export default function HomePage() {
 
     {/* BUT Sorbonne */}
     <a
-      href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-reseaux-et-telecommunications-parcours-cybersecurite"
+      href="https://odf.univ-spn.fr/fr/offre-de-formation/but-BUT/but-specialite-reseaux-et-telecommunications-parcours-cybersecurite-VBTCYB_117.html"
       target="_blank"
       rel="noopener noreferrer"
       className="flex flex-col items-center group"
@@ -380,65 +380,69 @@ export default function HomePage() {
 >
   <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">Projets universitaires</h2>
 
+  <section id="projets" className="bg-white px-6 py-16">
   <div className="relative border-l-4 border-blue-300 ml-4 pl-6 space-y-12">
+
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE503 : Assurer la sécurité & supervision avancée d&apos;un système d&apos;information</h3>
+      <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE503 : Assurer la sécurité &amp; supervision avancée d&apos;un SI</h3>
       <p className="text-gray-700 mt-2">
-        Pare-feu iptables, NAT, filtrage ICMP sous Marionnet. Simulation réseau complet dans MI-LXC avec attaques ARP, DNS, MITM.
+        Ce projet m&apos;a permis d&apos;approfondir mes compétences en sécurité réseau. J&apos;ai mis en place un pare-feu avec iptables, du NAT, et un filtrage ICMP rigoureux. Le tout a été intégré à un réseau complet simulé sous Marionnet. Grâce à l&apos;environnement MI-LXC, j&apos;ai simulé différentes attaques (ARP spoofing, DNS spoofing, MITM) et appris à y répondre efficacement.
+      </p>
+    </div>
+    
+
+    <div className="relative">
+      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h3 className="text-xl font-bold text-blue-700">2025: Concevoir, réaliser et présenter une solution technique</h3>
+      <p className="text-gray-700 mt-2">
+        J&apos;ai conçu un Wi-Fi sécurisé en créant un portail captif sous pfSense, avec authentification via FreeRADIUS et base de données MySQL. Ce projet m&apos;a familiarisé avec les normes professionnelles de sécurisation d&apos;accès réseau. L&apos;infrastructure a été testée sous VirtualBox, avec une topologie complète et fonctionnelle.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2025 &ndash; SAE501 : Concevoir, réaliser et présenter une solution technique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 : Piloter un projet informatique</h3>
       <p className="text-gray-700 mt-2">
-        Mise en place d&apos;un Wi-Fi avec portail captif, authentification FreeRADIUS et base MySQL sous pfSense. Réseau virtualisé sous VirtualBox.
+        L&apos;objectif était de mettre en œuvre une supervision réseau basée sur SNMP. J&apos;ai surveillé un service HTTP, configuré une alerte en cas d&apos;arrêt du service, et développé des MIBs personnalisées pour affiner la supervision. Cela m&apos;a permis de comprendre la gestion proactive des incidents.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE502 : Piloter un projet informatique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 : Découvrir le Pentesting</h3>
       <p className="text-gray-700 mt-2">
-        Surveillance d&apos;un service HTTP par SNMP, alerte automatique en cas de panne, remontée via MIBs personnalisées.
+        J&apos;ai mené une analyse de vulnérabilités sur des machines virtuelles avec Nessus. Certaines failles détectées ont été exploitées avec Metasploit. J&apos;ai appris à documenter les CVE critiques, à proposer des correctifs, et à mieux comprendre les mécanismes d&apos;intrusion.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE304 : Découvrir le Pentesting</h3>
+      <h3 className="text-xl font-bold text-blue-700">2024 : Développer des applications communicantes</h3>
       <p className="text-gray-700 mt-2">
-        Identification de CVE critiques avec Nessus, exploitation via Metasploit, documentation et recommandations correctives.
+        Dans ce projet, j&apos;ai développé un quiz interactif en PHP/MySQL avec scores en temps réel. Le projet a été hébergé via XAMPP et rendu accessible à distance via Ngrok. Ce projet m&apos;a appris à créer une application web communicante et à gérer les flux utilisateurs.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2024 &ndash; SAE302 : Développer des applications communicantes</h3>
+      <h3 className="text-xl font-bold text-blue-700">2023 : Construire un réseau informatique</h3>
       <p className="text-gray-700 mt-2">
-        Développement d&apos;un quiz PHP/MySQL avec scores en temps réel et hébergement distant via XAMPP/Ngrok.
+        J&apos;ai créé plusieurs LAN virtuels sous GNS3 avec du routage statique, OSPF et RIP. Des tests de connectivité ont permis de valider la cohérence de la topologie réseau. Cette SAE m&apos;a donné une base solide en architecture réseau.
       </p>
     </div>
 
     <div className="relative">
       <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2023 &ndash; SAE21 : Construire un réseau informatique</h3>
+      <h3 className="text-xl font-bold text-blue-700">2023 : MITM (Man-in-the-Middle)</h3>
       <p className="text-gray-700 mt-2">
-        Création de plusieurs LAN sous GNS3, routage statique, puis OSPF et RIP. Tests de connectivité pour valider la topologie réseau.
+        J&apos;ai réalisé une attaque MITM via ARP spoofing, intercepté du trafic HTTP, enregistré les données dans un fichier JSON/SQLite, et testé des scénarios de spoofing DNS/DHCP. Cette SAE m&apos;a permis de mettre en œuvre concrètement des attaques pour mieux comprendre les mécanismes de défense.
       </p>
     </div>
 
-    <div className="relative">
-      <div className="absolute -left-6 top-1.5 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h3 className="text-xl font-bold text-blue-700">2023 &ndash; SAE24 : MITM (Man-in-the-Middle)</h3>
-      <p className="text-gray-700 mt-2">
-        Mise en œuvre d&apos;une attaque MITM via empoisonnement ARP, interception HTTP, enregistrement JSON/SQLite, détection ARP et tests de spoofing DNS/DHCP.
-      </p>
-    </div>
   </div>
 </section>
-
+</section>
 
 
 <section
