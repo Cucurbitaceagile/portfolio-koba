@@ -36,6 +36,7 @@ function useScrollFadeIn() {
 export default function HomePage() {
   const presRef = useScrollFadeIn();
   const compRef = useScrollFadeIn();
+  const expRef = useScrollFadeIn();
   const formRef = useScrollFadeIn();
   const projRef = useScrollFadeIn();
   const contRef = useScrollFadeIn();
@@ -48,7 +49,7 @@ export default function HomePage() {
   return (
   <main className="font-sans text-gray-900 bg-gradient-to-b from-white via-blue-50 to-white min-h-screen scroll-smooth">
     <nav className="fixed top-0 w-full bg-white shadow z-50 p-4 flex justify-center gap-8 text-blue-800 font-semibold">
-      {['Accueil', 'Présentation', 'Compétences', 'Formations', 'Projets', 'Contact'].map((section) => (
+      {['Accueil', 'Présentation', 'Compétences', 'Expériences', 'Formations', 'Projets', 'Contact'].map((section) => (
         <a
           key={section}
           href={`#${section.toLowerCase()}`}
@@ -241,6 +242,45 @@ export default function HomePage() {
         <li>Français (courant)</li>
         <li>Anglais (technique)</li>
         <li>Rigueur, Esprit analytique, Autonomie, Travail en équipe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section
+  ref={expRef}
+  id="expériences"
+  className="bg-blue-50 px-6 py-12 transition-all duration-700 opacity-0 translate-y-8"
+>
+  <h2 className="text-3xl font-bold text-blue-800 mb-10 text-center">Expériences professionnelles</h2>
+
+  <div className="max-w-5xl mx-auto space-y-6">
+    <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-blue-600">
+      <h3 className="text-xl font-semibold text-blue-700">01/2025 &ndash; 04/2025 · Stagiaire en Développement et Cybersécurité</h3>
+      <p className="text-gray-800 mt-2">
+        <strong>Beytm, Neuilly-sur-Seine</strong>
+      </p>
+      <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+        <li>Déploiement d&apos;une infrastructure de logs avec Grafana, Loki et Promtail</li>
+        <li>Centralisation des logs Firebase et Vercel pour supervision en temps réel</li>
+        <li>Développement frontend avec Next.js, Tailwind CSS, JavaScript du site Neuroboost-ai</li>
+        <li>Implémentation de Firebase pour l&apos;authentification et la gestion utilisateur</li>
+        <li>Sécurisation de l&apos;accès à Grafana (HTTPS, gestion des accès)</li>
+        <li>Pentesting des systèmes en place</li>
+        <li>Mise en place d&apos;une authentification renforcée et gestion des accès serveur</li>
+      </ul>
+    </div>
+
+    <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-blue-600">
+      <h3 className="text-xl font-semibold text-blue-700">04/2024 &ndash; 06/2024 · Stagiaire en Pentesting, Cybersécurité et Réseaux</h3>
+      <p className="text-gray-800 mt-2">
+        <strong>Beytm, Neuilly-sur-Seine</strong>
+      </p>
+      <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+        <li>Test d'intrusion du site web de l'entreprise</li>
+        <li>Reassemblage du code source d'un logiciel de reconnaissance de mouvement</li>
+        <li>Rédaction de rapport cybersécurité</li>
+        <li>Rédaction de rapport réseau</li>
       </ul>
     </div>
   </div>
