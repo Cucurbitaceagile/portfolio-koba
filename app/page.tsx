@@ -173,11 +173,11 @@ export default function HomePage() {
 
   <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 border border-blue-100">
     <div className="text-lg text-gray-800 space-y-6">
-      <p> Diplomé d&apos;un BUT Réseaux & Télécommunications à l&apos;IUT de la Sorbonne Paris Nord,  j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
+      <p> Diplomé d&apos;un BUT Réseaux & Télécommunications à l&apos;IUTSorbonne Paris Nord, j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
         Mon parcours m&apos;a permis de participer à des projets concrets tels que la mise en place de Wi-Fi sécurisé, d&apos;infrastructures de supervision ou encore des audits réseau.
       </p>
       <p>
-        Je suis à la recherche d&apos;une alternance en sécurité des systèmes d&apos;information ou en infrastructure réseau pour la rentrée 2026 pour une durée de 24-36 mois. Motivé à démontrer mes compétences dans un environnement professionnel stimulant.
+        Je suis à la recherche d&apos;une alternance en sécurité des systèmes d&apos;information ou en infrastructure réseau pour la rentrée 2026 pour une durée de 24 à 36 mois. Motivé à démontrer mes compétences dans un environnement professionnel stimulant.
 
       </p>
     </div>
