@@ -146,11 +146,7 @@ export default function HomePage() {
     }
 
     .typewriter-role::before {
-      content: "Ingénieur Réseaux & Sécurité";
-    }
-
-    .typewriter-role.typing2::before {
-      content: "Futur Ingénieur Réseaux & Sécurité";
+      content: "Etudiant en cybersécurité";
     }
   `}</style>
 
@@ -171,20 +167,18 @@ export default function HomePage() {
   ref={presRef}
   id="présentation"
   className="bg-blue-50 px-6 py-16 transition-all duration-700 opacity-0 translate-y-8"
+  
 >
   <h2 className="text-3xl font-bold text-blue-800 text-center mb-8">Présentation</h2>
 
   <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 border border-blue-100">
     <div className="text-lg text-gray-800 space-y-6">
-      <p>
-        Actuellement étudiant en BUT Réseaux & Télécommunications à l&apos;IUT de la Sorbonne Paris Nord,
-        j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
+      <p> Diplomé d&apos;un BUT Réseaux & Télécommunications à l&apos;IUT de la Sorbonne Paris Nord,  j&apos;ai développé de solides compétences techniques en infrastructures réseaux, sécurité informatique et virtualisation.
         Mon parcours m&apos;a permis de participer à des projets concrets tels que la mise en place de Wi-Fi sécurisé, d&apos;infrastructures de supervision ou encore des audits réseau.
       </p>
       <p>
-        Admis en cycle ingénieur à l&apos;EFREI Paris pour la rentrée 2025, je suis à la recherche d&apos;une alternance à partir de septembre 2025
-        afin de mettre en pratique mes compétences dans un environnement professionnel stimulant.
-        Autonome, rigoureux et passionné par les systèmes et la cybersécurité, je suis prêt à relever les défis du monde de l&apos;ingénierie réseau.
+        Je suis à la recherche d&apos;une alternance en sécurité des systèmes d&apos;information ou en infrastructure réseau pour la rentrée 2026 pour une durée de 24-36 mois. Motivé à démontrer mes compétences dans un environnement professionnel stimulant.
+
       </p>
     </div>
   </div>
@@ -301,31 +295,6 @@ export default function HomePage() {
   <h2 className="text-3xl font-bold text-blue-800 mb-10 text-center">Formations</h2>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4">
-    {/* EFREI */}
-    <a
-  href="https://www.cfa-numia.fr/app/uploads/2023/06/efrei-ingenieur-informatique-parcours-reseaux-et-securite-3-ans.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex flex-col items-center group"
->
-  <img src="/efrei-logo.png" alt="EFREI logo" className="w-40 h-auto mb-10 object-contain" />
-  
-  <div className="relative w-full min-h-[240px] rounded-xl overflow-hidden shadow-lg">
-    <img
-      src="/efrei-bg.jpg"
-      alt="EFREI fond"
-      className="absolute inset-0 w-full h-full object-cover filter blur-xs scale-100 group-hover:scale-110 transition duration-500"
-    />
-    
-    <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
-      <p className="font-semibold text-lg">
-        Cycle Ingénieur Réseaux & Sécurité<br />EFREI Paris (2025 &ndash; 2028)
-      </p>
-    </div>
-  </div>
-</a>
-
-
     {/* BUT Sorbonne */}
     <a
       href="https://odf.univ-spn.fr/fr/offre-de-formation/but-BUT/but-specialite-reseaux-et-telecommunications-parcours-cybersecurite-VBTCYB_117.html"
